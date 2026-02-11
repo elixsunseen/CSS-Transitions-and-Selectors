@@ -1,0 +1,173 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header{
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 15%;
+    z-index: 100;
+    
+    width: 85%;
+}
+
+header p{
+    margin: 0;
+    padding: 25px;
+        
+    background-color: red;
+    font-size: x-large;
+    text-align: center;
+}
+
+#recentArticles:hover + #jumpMenu {
+    display: block;
+}
+
+#jumpMenu {
+    display: none;
+    margin: 0;
+    padding-left: 0;
+   
+    background-color: gold;
+    text-align: center;
+    list-style-type: none;
+}
+
+#jumpMenu:hover {
+    display: block;
+}
+
+#jumpMenu a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+#jumpMenu a:hover{
+    background-color:blue;
+    color:black;
+}
+
+
+body nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    
+    background-color: black;
+    width: 15%;
+    height: 100vh;
+}
+
+body nav button {
+    width: 100%;
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    
+    border: 1px solid black;
+    cursor: pointer;
+    display: block;
+}
+
+body nav button:hover{
+    background-color: darkorange;
+}
+
+
+h1{
+    margin-left: 15%;
+    margin-top: 8%;
+
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 85%;
+    margin-left: 15%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+article{
+    flex: 0 0 300px;
+    margin: 10px;
+    padding: 0 15px;
+    color: darkgray;
+
+    scroll-margin-top: 180px;
+    transition: flex 2s, color 2s, font-size 2s;
+}
+
+article:hover{
+    margin: 10px;
+    color:black;
+    
+    flex: 100 100 150px;
+    font-size: 20px;
+}
+
+article > p:first-of-type::first-letter {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 36px;
+}
+
+a[href="http://www.google.com"]::after {
+    content: "";
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: url('arrow.png');
+    background-size: contain;
+    vertical-align: middle;
+}
+
+footer{
+    width: 60%;
+    margin-left: 27%;
+    margin-right: auto;
+    margin-bottom: 10%;
+    padding: 20px 0;
+    
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+p#thanks{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 9999;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    min-height: 50px;
+    margin: 0;
+    padding: 10px;
+    
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    background-color: lightblue;
+    border: 2px solid black;
+}
